@@ -1,0 +1,201 @@
+.bx-wrapper {
+position: relative;
+margin: 0 0 10px 0;
+padding: 0;
+*zoom: 1;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.bx-wrapper img {width: 995px;display: block;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+z-index: 1;
+}
+.sliding-video {
+	float:right;
+	z-index: 9999;
+	margin-top: 70px;
+	margin-right: 100px;
+}
+li#sliding1 {
+	background: url(http://mynewskin.ru/my/img/sliding1.jpg) no-repeat #fff;
+	width: 990px;
+	height:536px;
+}
+li#sliding2 {
+	background: url(http://mynewskin.ru/my/img/sliding2.jpg) no-repeat #fff;
+	width: 990px;
+	height:536px;
+}
+li#sliding3 {
+	background: url(http://mynewskin.ru/my/img/sliding3.jpg) no-repeat #fff;
+	width: 990px;
+	height:536px;
+}
+li#sliding4 {
+	background: url(http://mynewskin.ru/my/img/sliding4.jpg) no-repeat #fff;
+	width: 990px;
+	height:536px;
+}
+
+
+
+.bx-wrapper .bx-viewport {
+-moz-box-shadow: 0 0 5px #ccc;
+-webkit-box-shadow: 0 0 5px #ccc;
+box-shadow: 0 0 5px #ccc;
+border: solid #fff 1px;
+background: #fff;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {position: absolute;bottom: 15px;width: 100%;}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	
+}
+
+/* PAGER */ 
+
+.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-family: Arial;color: #666;padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+text-indent: -9999px;
+display: block;
+padding: 0 10px;
+background: url(../img/pager-not-active.png) no-repeat;
+
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: url(../img/pager-active.png) no-repeat;
+	text-indent: -9999px;
+	display: block;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(../img/bxsp.png) no-repeat 0 0px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(../img/bxsp.png) no-repeat 0px -158px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 -79px;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: 0 -237px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 39px;
+	height: 78.5px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../img/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../img/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+#slider{width:945px;position:relative;margin:15px 0 0 2px;}
